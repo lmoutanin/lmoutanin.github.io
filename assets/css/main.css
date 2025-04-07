@@ -1462,3 +1462,9 @@ section,
   z-index: 2;
   position: relative;
 }
+
+.col-lg-8 ul {
+  margin-left: 2%;
+}
+
+ 
