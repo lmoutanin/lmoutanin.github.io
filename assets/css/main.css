@@ -1,6 +1,6 @@
 /**
-* Template Name: Personal
-* Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+* Template Name: M.L
+* Template URL: https://bootstrapmade.com/M.L-free-resume-bootstrap-template/
 * Updated: Mar 05 2025 with Bootstrap v5.3.3
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
@@ -587,7 +587,7 @@ h6 {
 --------------------------------------------------------------*/
 .page-title {
   color: var(--default-color);
-  background-image: url("/assets/img/813332-final.jpg");
+  background-image: url("/assets/img/");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; /* Pour centrer l'image */
@@ -906,6 +906,10 @@ section,
 .interests .features-item h3 a {
   color: var(--heading-color);
   transition: 0.3s;
+}
+
+.centersx {
+  margin-left: 30px;
 }
 
 .interests .features-item:hover {
@@ -1452,7 +1456,7 @@ section,
 }
 
 .page-title {
-  background-image: url("../img/813126-final.jpg");
+  background-image: url("../img/c756cc36-ce24-4880-b96f-a4b9f130aae4.png");
 }
 
 .dates p span {
@@ -1467,4 +1471,6 @@ section,
   margin-left: 2%;
 }
 
- 
+.centersx {
+  margin-left: 25%;
+}

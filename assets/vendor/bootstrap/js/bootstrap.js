@@ -5,9 +5,10 @@
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('@popperjs/core')) :
-  typeof define === 'function' && define.amd ? define(['@popperjs/core'], factory) :
-  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.bootstrap = factory(global.Popper));
-})(this, (function (Popper) { 'use strict';
+    typeof define === 'function' && define.amd ? define(['@popperjs/core'], factory) :
+      (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.bootstrap = factory(global.Popper));
+})(this, (function (Popper) {
+  'use strict';
 
   function _interopNamespaceDefault(e) {
     const n = Object.create(null, { [Symbol.toStringTag]: { value: 'Module' } });
@@ -216,7 +217,7 @@
     }
     return findShadowRoot(element.parentNode);
   };
-  const noop = () => {};
+  const noop = () => { };
 
   /**
    * Trick to restart an element's animation
@@ -4037,7 +4038,7 @@
   const ARROW_RIGHT_KEY = 'ArrowRight';
   const ARROW_UP_KEY = 'ArrowUp';
   const ARROW_DOWN_KEY = 'ArrowDown';
-  const HOME_KEY = 'Home';
+  const Accueil_KEY = 'Accueil';
   const END_KEY = 'End';
   const CLASS_NAME_ACTIVE = 'active';
   const CLASS_NAME_FADE$1 = 'fade';
@@ -4145,15 +4146,15 @@
       this._queueCallback(complete, element, element.classList.contains(CLASS_NAME_FADE$1));
     }
     _keydown(event) {
-      if (![ARROW_LEFT_KEY, ARROW_RIGHT_KEY, ARROW_UP_KEY, ARROW_DOWN_KEY, HOME_KEY, END_KEY].includes(event.key)) {
+      if (![ARROW_LEFT_KEY, ARROW_RIGHT_KEY, ARROW_UP_KEY, ARROW_DOWN_KEY, Accueil_KEY, END_KEY].includes(event.key)) {
         return;
       }
       event.stopPropagation(); // stopPropagation/preventDefault both added to support up/down keys without scrolling the page
       event.preventDefault();
       const children = this._getChildren().filter(element => !isDisabled(element));
       let nextActiveElement;
-      if ([HOME_KEY, END_KEY].includes(event.key)) {
-        nextActiveElement = children[event.key === HOME_KEY ? 0 : children.length - 1];
+      if ([Accueil_KEY, END_KEY].includes(event.key)) {
+        nextActiveElement = children[event.key === Accueil_KEY ? 0 : children.length - 1];
       } else {
         const isNext = [ARROW_RIGHT_KEY, ARROW_DOWN_KEY].includes(event.key);
         nextActiveElement = getNextActiveElement(children, event.target, isNext, true);
