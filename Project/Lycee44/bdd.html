@@ -103,7 +103,7 @@
               <a href="description.html">Description du Projet</a>
               <a href="https://drive.google.com/drive/folders/1XiE84O7Oc9EiHDL1e07qxIFdHQRWQrMx?usp=drive_link"
                 target="_blank">Documentation</a>
-              <a href="https://github.com/lmoutanin/97CAR-Symfony" target="_blank">GitHub</a>
+              <a href="https://github.com/lmoutanin/Lycee-44" target="_blank">GitHub</a>
             </div>
 
           </div>
@@ -118,10 +118,10 @@
 
 
 
-            <h3> Modèle Conceptuel : </h3> <br>
+            <h3> Modèle Uml : </h3> <br>
 
-            <center> <img src="../../assets/project/lycee 44/" width="700" height="350" class="glightbox preview-link"
-                class="img-fluid services-img"></center>
+            <center> <img src="../../assets/project/lycee 44/uml.png" width="700" height="350"
+                class="glightbox preview-link" class="img-fluid services-img"></center>
 
             <br>
 
@@ -144,33 +144,46 @@
             <br>
 
 
-            <h4>Clients :</h4>
+            <h4>Étudiants :</h4>
             <ul>
-              <li><i class="bi bi-arrow-right"></i> <span>Stocke les informations personnelles des clients, telles que
-                  le nom, l'adresse, le numéro de téléphone et l'email.</span></li>
+              <li><i class="bi bi-arrow-right"></i> <span>Gère les informations personnelles des étudiants (nom, prénom,
+                  date de naissance, email).
+
+                  Chaque étudiant est associé à une classe, ce qui permet de les regrouper par niveau.</span></li>
             </ul> <br>
 
-            <h4>Véhicules :</h4>
+            <h4>Classe :</h4>
             <ul>
-              <li><i class="bi bi-arrow-right"></i> <span>Contient les détails des véhicules entretenus, y compris la
-                  marque, le modèle, l'année, le numéro d'immatriculation et l'ID du propriétaire, établissant ainsi une
-                  relation avec l'entité Clients. </span></li>
-            </ul> <br>
+              <li><i class="bi bi-arrow-right"></i> <span> Contient les données liées à chaque classe (libellé, niveau,
+                  effectif actuel et maximum).
 
-
-            <h4> Réparations :</h4>
-            <ul>
-              <li><i class="bi bi-arrow-right"></i> <span> Enregistre chaque intervention effectuée sur les véhicules,
-                  avec des informations telles que la date de la réparation, la description des travaux effectués, le
-                  coût associé et l'ID du véhicule concerné, créant une liaison avec l'entité Véhicules. </span></li>
+                  Permet de suivre le nombre d’élèves et d'organiser les groupes. </span></li>
             </ul> <br>
 
 
-            <h4> Factures :</h4>
+            <h4>Absences :</h4>
             <ul>
-              <li><i class="bi bi-arrow-right"></i> <span>Gère les données relatives à la facturation des réparations,
-                  incluant le numéro de facture, la date d'émission, le montant total et l'ID du client, assurant une
-                  connexion avec l'entité Clients. </span></li>
+              <li><i class="bi bi-arrow-right"></i> <span> Enregistre chaque absence d’un étudiant, avec la date et une
+                  indication si elle est justifiée ou non.
+
+                  Reliée à l'étudiant concerné via son identifiant. </span></li>
+            </ul> <br>
+
+
+            <h4> Matières :</h4>
+            <ul>
+              <li><i class="bi bi-arrow-right"></i> <span>Définit les matières enseignées, avec des informations comme
+                  le nom, le coefficient et le nombre d’heures.
+
+                  Sert à identifier les matières concernées lors d’une absence. </span></li>
+            </ul> <br>
+
+
+            <h4>Absence_Matière :</h4>
+            <ul>
+              <li><i class="bi bi-arrow-right"></i> <span>Fait le lien entre les absences et les matières.
+
+                  Permet d’associer une absence à une ou plusieurs matières manquées. </span></li>
             </ul> <br>
 
           </div>
