@@ -106,7 +106,9 @@
               <a href="description.html">Description du Projet</a>
               <a href="https://drive.google.com/drive/folders/1HrRIyYcViirmG8gALrL6aYp5VqbufQHL?dmr=1&ec=wgc-drive-globalnav-goto"
                 target="_blank" target="_blank">Documentation</a>
-              <a href="https://github.com/lmoutanin/API-97CAR" target="_blank">GitHub</a>
+              <a href="https://drive.google.com/drive/folders/1rx0DHl0tsnJXClETdj8UpaxiPUD2Bx4I?usp=sharing"
+                target="_blank">Documentation Technique</a>
+              <a href="github.html"  >GitHub</a>
             </div>
 
           </div>
@@ -125,57 +127,90 @@
 
 
             <p>
-              Dans le cadre de mon stage en tant que développeur informatique au sein du garage automobile 97CAR (50
-              employés, situé à La Réunion), ma mission principale était de poursuivre le développement d'un système de
-              gestion simplifié mais efficace pour organiser les opérations commerciales quotidiennes.
-              Le garage, spécialisé dans la réparation de véhicules thermiques, électriques et hybrides, souhaitait
-              optimiser l’accès aux informations clients et facturation pour ses équipes commerciales.
+              Dans le cadre de mon stage en tant que développeur informatique, ma mission consiste à développer un
+              système de gestion simple et performant afin de faciliter l’organisation des opérations quotidiennes du
+              garage.
+
+              L’objectif est de poursuivre le développement de l’application CarSlim (application Android) destinée aux
+              commerciaux, en y ajoutant de nouvelles fonctionnalités et en assurant une communication fluide avec l’API
+              du backend.
+
 
 
             </p><br>
 
-            <h4>Missions Principale :</h4>
+            <h4>Connexion aux données :</h4>
+
             <ul>
-              <li><i class="bi bi-arrow-right"></i> <span>Développement mobile : Poursuite du développement de
-                  l’application Android CarSlim destinée aux commerciaux du garage.</span></li>
-              <li><i class="bi bi-arrow-right"></i> <span>Fonctionnalités principales de l’application :</span></li>
-              <ul>
-                <li><i class="bi bi-arrow-right"></i> <span> Consultation de la liste des clients,</span>
+              <li><i class="bi bi-dot "></i> <span>Mise en place d’une communication entre l’application Android et la
+                  base de
+                  données via une API REST.</span></li>
+              <li><i class="bi bi-dot "></i> <span> L’API est développée en PHP avec le micro-framework Slim. </span>
+              </li>
 
-                </li>
-                <li><i class="bi bi-arrow-right"></i> <span> Visualisation des factures associées à chaque
-                    client,</span></li>
-                <li><i class="bi bi-arrow-right"></i> <span>Détail des informations de facturation. </span></li>
+              <li><i class="bi bi-dot "></i> <span> La communication entre l’application Android et l’API se fait à
+                  l’aide de Retrofit (bibliothèque HTTP pour Kotlin).</span></li>
+            </ul>
+
+            <h4> Fonctionnalités de l’application Android :</h4>
+
+
+            <br>
+            <p>Une partie des fonctionnalités a déjà été mise en place.</p>
+            <i class=" "></i> <span><strong>La mission consiste à :</strong></span>
+
+            <ul>
+              <li><i class="bi bi-dot"></i> <span> Tester celles déjà développées. </span></li>
+              <li><i class="bi bi-dot"></i> <span>Développer les fonctionnalités manquantes, notamment : </span></li>
+            </ul>
+
+
+            <span><strong>Intégration des routes API REST :</strong></span>
+            <ul>
+              <ul>
+                <li><strong> <mark>GET /voitures </mark></strong> <i class="bi bi-arrow-right-short"></i>
+                  <span>Récupérer la liste des voitures. </span>
+                </li> <br>
+                <li><strong><mark>GET /voitures/{id}</mark></strong><i class="bi bi-arrow-right-short"></i> <span>
+                    Obtenir les détails d’une voiture via son identifiant.</span></li><br>
+                <li><strong><mark>POST /voitures</mark></strong> <i class="bi bi-arrow-right-short"></i> <span> Ajouter
+                    une nouvelle voiture à partir des données JSON envoyées par l'application Android. </span></li><br>
               </ul>
 
-              <li><i class="bi bi-arrow-right"></i> <span>Connexion aux données :
+              <span><strong> Fonctions à ajouter dans l’interface utilisateur :</strong></span>
 
-                </span></li>
-              <ul>
-                <li><i class="bi bi-arrow-right"></i> <span> Mise en place d’une communication entre l’application
-                    Android et la base de données via une API REST.</span>
 
-                </li>
-                <li><i class="bi bi-arrow-right"></i> <span> API développée en PHP avec le micro-framework Slim.</span>
-                </li>
-
-              </ul>
+              <li><i class="bi bi-dot"></i> <span> <strong>Modification</strong> et <strong>suppression </strong>des
+                  clients.</span></li>
+              <li><i class="bi bi-dot"></i> <span><strong> Ajout</strong>,<strong> modification</strong> et
+                  <strong>suppression</strong> des voitures.</span></li>
 
 
             </ul> <br>
 
             <h4>Environnement technique :</h4>
             <ul>
-              <li><i class="bi bi-arrow-right"></i> <span>Développement mobile : Android (Java/Kotlin selon les besoins
-                  du projet)</span></li>
-              <li><i class="bi bi-arrow-right"></i> <span>Backend : PHP (Slim Framework)</span></li>
-              <li><i class="bi bi-arrow-right"></i> <span>Base de données : PostgreSQL
-
+              <li><i class="bi bi-dot"></i> <span><strong>Langages et Frameworks :</strong> Android : Kotlin + Jetpack
+                  Compose
+                  API : PHP (Slim Framework)
                 </span></li>
-              <li><i class="bi bi-arrow-right"></i> <span>Architecture : API REST </span></li>
-              <li><i class="bi bi-arrow-right"></i> <span>Méthodologie : Approche agile pour les évolutions
+              <li><i class="bi bi-dot"></i> <span><strong>Base de données :</strong> PostgreSQL</span></li>
+              <li><i class="bi bi-dot"></i> <span><strong>Outils de virtualisation :</strong> Docker et
+                  Hyper-V</span></li>
+              <li><i class="bi bi-dot"></i> <span><strong>Contrôle de version :</strong> Git et Github </span>
+              </li>
+              <li><i class="bi bi-dot"></i> <span><strong>Architecture logicielle :</strong> MVVM et REST
+                </span></li>
+              <li><i class="bi bi-dot"></i> <span><strong>Méthodologie :</strong> Approche agile pour les
+                  évolutions
                   fonctionnelles</span></li>
             </ul><br>
+
+            <h4>Documentation :</h4>
+            <ul>
+              <li><i class="bi bi-dot"></i> <span>Rédaction de guides techniques pour faciliter la prise en main, la
+                  maintenance et l’évolution du projet.</span></li>
+            </ul>
 
 
 

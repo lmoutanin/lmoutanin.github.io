@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>97CAR-Android - M.L - Bdd</title>
+  <title>97CAR-Android - M.L - Context</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -39,6 +39,7 @@
 </head>
 
 <body class="service-details-page">
+
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -84,7 +85,7 @@
         <div class="container">
           <ol>
             <li><a href="../../index.html">Accueil</a></li>
-            <li class="current">Base de Données</li>
+            <li class="current">Présentation du Contexte</li>
           </ol>
         </div>
       </nav>
@@ -100,14 +101,14 @@
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="services-list">
               <a href="context.html">Présentation du Contexte</a>
-              <a href="bdd.html" class="active">Base de Données</a>
+              <a href="bdd.html">Base de Données</a>
               <a href="gestion.html">Gestion de Projet </a>
               <a href="description.html">Description du Projet</a>
               <a href="https://drive.google.com/drive/folders/1HrRIyYcViirmG8gALrL6aYp5VqbufQHL?dmr=1&ec=wgc-drive-globalnav-goto"
                 target="_blank" target="_blank">Documentation</a>
-                 <a href="https://drive.google.com/drive/folders/1rx0DHl0tsnJXClETdj8UpaxiPUD2Bx4I?usp=sharing"
-                                target="_blank">Documentation Technique</a>
-              <a href="github.html"  >GitHub</a>
+              <a href="https://drive.google.com/drive/folders/1rx0DHl0tsnJXClETdj8UpaxiPUD2Bx4I?usp=sharing"
+                target="_blank">Documentation Technique</a>
+              <a href="github.html" class="active">GitHub</a>
             </div>
 
           </div>
@@ -116,84 +117,30 @@
           <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
 
             <center>
-              <h2> <strong> Base de données </strong></h2>
-            </center> <br>
-
-
-            <p>
-              Lors de mon premier Project, j'ai conçu une modélisation de base de données pour le garage 97CAR, qui
-              servira de point de départ pour ce projet.
-            </p><br>
-
-            <h3> Modèle Conceptuel : </h3> <br>
-
-            <center> <img src="../../assets/project/97car-symfony/ap_3.2_01.png" width="700" height="350"
-                class="glightbox preview-link" class="img-fluid services-img"></center>
-
-            <br>
-
-            <h3> Modèle Relationnel : </h3>
-            <br>
-            <center> <img src="../../assets/project/97car-android/modele relationelle.png" width="700"
-                height="450" class="glightbox preview-link" class="img-fluid services-img"></center><br>
-
-                <center> <img src="../../assets/project/97car-android/postgres 1.png" width="700"
-                class="glightbox preview-link" class="img-fluid services-img"></center><br>
-
-                 <center> <img src="../../assets/project/97car-android/postgres 2.png" width="700"
-                height="350" class="glightbox preview-link" class="img-fluid services-img"></center>
-
-            <br>
-
-             <h3> Diagramme de classes UML : </h3>
-            <br>
-            <center> <img src="../../assets/project/97car-android/diagramme de classe.png" width="700"
-                height="450" class="glightbox preview-link" class="img-fluid services-img"></center>
-
-            
-
-          
-            <br><br>
-
-            <center>
-              <h4><strong>Cette modélisation comprend les entités principales suivantes :</strong></h4>
+              <h2><strong> Dépôts GitHub du projet</strong> </h2>
             </center>
 
+            
+            <br>
+            <center> <img src="../../assets/project/97car-symfony/logo_97car.png" class="glightbox preview-link" alt=""
+                class="img-fluid services-img"></center>
             <br>
 
+            <center>
 
-            <h4>Clients :</h4>
-            <ul>
-              <li><i class="bi bi-arrow-right"></i> <span>Stocke les informations personnelles des clients, telles que
-                  le nom, l'adresse, le numéro de téléphone et l'email.</span></li>
-            </ul> <br>
+              <p><strong> 💻 Application Android :</strong> <a
+                  href="https://github.com/lmoutanin/97CAR_Android" target="_blank">lien</a> </p>
+              <p><strong> 🌐 API REST :</strong> <a href="https://github.com/lmoutanin/97car-Android-api" target="_blank">lien</a> </p>
 
-            <h4>Véhicules :</h4>
-            <ul>
-              <li><i class="bi bi-arrow-right"></i> <span>Contient les détails des véhicules entretenus, y compris la
-                  marque, le modèle, l'année, le numéro d'immatriculation et l'ID du propriétaire, établissant ainsi une
-                  relation avec l'entité Clients. </span></li>
-            </ul> <br>
+            </center>
 
 
-            <h4> Réparations :</h4>
-            <ul>
-              <li><i class="bi bi-arrow-right"></i> <span> Enregistre chaque intervention effectuée sur les véhicules,
-                  avec des informations telles que la date de la réparation, la description des travaux effectués, le
-                  coût associé et l'ID du véhicule concerné, créant une liaison avec l'entité Véhicules. </span></li>
-            </ul> <br>
 
 
-            <h4> Factures :</h4>
-            <ul>
-              <li><i class="bi bi-arrow-right"></i> <span>Gère les données relatives à la facturation des réparations,
-                  incluant le numéro de facture, la date d'émission, le montant total et l'ID du client, assurant une
-                  connexion avec l'entité Clients. </span></li>
-            </ul> <br>
 
-          
-            </span></li>
-            </ul> <br>
+
+
+
 
           </div>
 
